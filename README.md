@@ -89,7 +89,7 @@ Consider the following files and directories:
 - `preamble.tex` — user-specific packages and custom commands where appropriate;
 - `sampleRefs.bib` — example bibliography database, which may be renamed or replaced.
 - `front/` — front-matter content;
-- `chapters/` — dissertation chapters and appendices as configured by the template;
+- `chapters/` — dissertation chapters and appendices as independent `.tex` files;
 - `figures/` — figures and graphical assets;
 
 ## Versioning
