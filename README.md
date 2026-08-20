@@ -2,10 +2,10 @@
 
 A maintained LaTeX dissertation template for the Master's Programme in Electrical and Computer Engineering (MEEC) at the Instituto Superior de Engenharia do Porto (ISEP).
 
-> **Current development target:** v2.0.0 — first formally versioned GitHub release.
+> **Current development target:** v2.0 — first formally versioned GitHub release.
 
 [![License: LPPL 1.3c](https://img.shields.io/badge/License-LPPL%201.3c-blue.svg)](LICENSE)
-[![Release](https://img.shields.io/badge/release-v2.0.0--dev-orange.svg)](CHANGELOG.md)
+[![Release](https://img.shields.io/badge/release-v2.0--dev-orange.svg)](CHANGELOG.md)
 
 ## Overview
 
@@ -29,7 +29,7 @@ The project originated in 2021 as an adaptation of the LaTeXTemplates 'Masters/D
 The template release ZIP file has the following contents:
 
 ```text
-ISEP_DEE_MEEC_Thesis_Template_v2.0.0/
+ISEP_DEE_MEEC_Thesis_Template_v2.0/
 ├── main.tex
 ├── preamble.tex
 ├── sampleRefs.bib
@@ -95,7 +95,7 @@ Consider the following files and directories:
 
 ## Versioning
 
-**v2.0.0** will be the first formally versioned GitHub release. The v2 designation reflects the transition from the template's 2021–2026 Overleaf-based development period to a maintained software release with formal versioning, documentation, automated validation and packaged releases.
+**v2.0** will be the first formally versioned GitHub release. The v2 designation reflects the transition from the template's 2021–2026 Overleaf-based development period to a maintained software release with formal versioning, documentation, automated validation and packaged releases.
 
 See [CHANGELOG.md](CHANGELOG.md).
 
