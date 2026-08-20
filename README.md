@@ -26,7 +26,7 @@ The project originated in 2021 as an adaptation of the LaTeXTemplates 'Masters/D
 
 ## Template structure
 
-The student-facing template is intentionally compact:
+The template release download ZIP file as the content:
 
 ```text
 ISEP_DEE_MEEC_Thesis_Template_v2.0.0/
@@ -58,9 +58,9 @@ The GitHub repository is the authoritative distribution source. Overleaf is supp
 ### Local LaTeX installation
 
 Install a current TeX distribution such as:
-- **Windows:** [TeX Live](www.tug.org) or [MikTeX](miktex.org),
-- **macOS:** [MacTeX](www.tug.org/mactex/) or [MikTeX](miktex.org),
-- **Linux:** [TeX Live](www.tug.org) or [MikTeX](miktex.org),
+- Windows: [TeX Live](www.tug.org) or [MikTeX](miktex.org),
+- macOS: [MacTeX](www.tug.org/mactex/) or [MikTeX](miktex.org),
+- Linux: [TeX Live](www.tug.org) or [MikTeX](miktex.org),
 
 together with an editor such as TeXstudio, TeXmaker or VS Code with a LaTeX extension.
 
