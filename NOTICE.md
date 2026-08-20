@@ -14,23 +14,23 @@ Copyright © 2021–2026 Vítor Cunha for original contributions and modificatio
 
 ## Project provenance
 
-The project began in 2021 as an adaptation of the LaTeXTemplates **Masters/Doctoral Thesis** template available at that time.
+The project began in 2021 as an adaptation of the LaTeXTemplates Masters/Doctoral Thesis template available at that time.
 
 Since the initial adoption, development of the ISEP DEE MEEC Thesis Template has been carried out independently by Vítor M. R. Cunha. The current project contains substantial original development, including institutional formatting, architectural changes, metadata interfaces and validation, automated front matter, submission-date handling, academic-integrity and generative-AI declarations, compatibility work, documentation and ongoing maintenance.
 
-No later upstream versions of the LaTeXTemplates Masters/Doctoral Thesis template have knowingly been incorporated after the original 2021 derivation.
+No later upstream versions of the LaTeXTemplates Masters/Doctoral Thesis template have been incorporated after the original 2021 derivation.
 
 Historical attribution is nevertheless retained because portions of the current codebase may remain derived from that original work.
 
 ## Historical upstream attribution
 
-The inherited class/source history credits the LaTeXTemplates **Masters/Doctoral Thesis** project and contributors identified in the historical upstream distribution, including Vel and Johannes Böttcher.
+The inherited class/source history credits the LaTeXTemplates Masters/Doctoral Thesis project and contributors identified in the historical upstream distribution, including Vel and Johannes Böttcher.
 
 Copyright, attribution, and licence notices present in inherited source files should be preserved where applicable.
 
 ## Licensing basis
 
-The historical upstream class was distributed under the LaTeX Project Public License. The maintained MEEC Thesis Template is therefore distributed under the **LaTeX Project Public License, version 1.3c or later**, unless an individual file states otherwise.
+The historical upstream class was distributed under the LaTeX Project Public License. The maintained ISEP DEE MEEC Thesis Template is therefore distributed under the **LaTeX Project Public License, version 1.3c or later**, unless an individual file states otherwise.
 
 The work has LPPL maintenance status `maintained`.
 
