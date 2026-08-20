@@ -5,7 +5,7 @@ type: software
 authors:
   - family-names: "M. R. Cunha"
     given-names: "Vítor"
-version: "2.0.0"
+version: "2.0"
 date-released: "TBD"
 license: "LPPL-1.3c"
 repository-code: "https://github.com/VitorMRCunha/ISEP_DEE_MEEC_Thesis_Template"
