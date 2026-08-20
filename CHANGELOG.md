@@ -2,7 +2,7 @@
 
 All notable changes to the ISEP DEE MEEC Thesis Template will be documented in this file.
 
-The project adopts [Semantic Versioning](https://semver.org/) from the v2.0.0 GitHub release onward.
+The project adopts [Semantic Versioning](https://semver.org/) from the v2.0 GitHub release onward.
 
 ## [Unreleased]
 
@@ -17,7 +17,7 @@ The project adopts [Semantic Versioning](https://semver.org/) from the v2.0.0 Gi
 - Distribution is being migrated from the previous Overleaf-based model to GitHub as the authoritative source.
 - Student releases will be distributed as curated versioned ZIP packages.
 
-## [2.0.0] - TBD
+## [2.0] - TBD
 
 First formally versioned GitHub release of the ISEP DEE MEEC Thesis Template.
 
