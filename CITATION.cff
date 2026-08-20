@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use the ISEP DEE MEEC Thesis Template in work where software/template citation is appropriate, please cite this repository."
+title: "ISEP DEE MEEC Thesis Template"
+type: software
+authors:
+  - family-names: "M. R. Cunha"
+    given-names: "Vítor"
+version: "2.0.0"
+date-released: "TBD"
+license: "LPPL-1.3c"
+repository-code: "https://github.com/VitorMRCunha/ISEP_DEE_MEEC_Thesis_Template"
+url: "https://github.com/VitorMRCunha/ISEP_DEE_MEEC_Thesis_Template"
+abstract: >-
+  A maintained LaTeX dissertation template for the Master's Programme
+  in Electrical and Computer Engineering (MEEC) at the Instituto
+  Superior de Engenharia do Porto (ISEP). The project originated in
+  2021 as an adaptation of the LaTeXTemplates Masters/Doctoral Thesis
+  template and has since undergone extensive independent development.
+keywords:
+  - LaTeX
+  - thesis
+  - dissertation
+  - MEEC
+  - ISEP

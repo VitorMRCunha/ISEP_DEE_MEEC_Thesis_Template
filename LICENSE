@@ -1,0 +1,45 @@
+ISEP DEE MEEC Thesis Template
+Licensing notice
+
+Copyright (c) 2021-2026 Vítor M. R. Cunha for original contributions and
+modifications, except where otherwise indicated.
+
+This project originated in 2021 as an adaptation of the LaTeXTemplates
+"Masters/Doctoral Thesis" template available at that time. Portions of the
+current work may therefore remain derived from that historical upstream work.
+See NOTICE.md in the source repository for provenance and attribution details.
+
+Unless an individual file states otherwise, this work may be distributed
+and/or modified under the conditions of the LaTeX Project Public License
+(LPPL), either version 1.3c of the License or (at your option) any later
+version.
+
+The latest version of the LPPL is available from the LaTeX Project at:
+
+    https://www.latex-project.org/lppl/
+
+and version 1.3c is distributed as part of LaTeX distributions dated
+2008-05-04 or later.
+
+This work has the LPPL maintenance status "maintained".
+
+The Current Maintainer of this work is:
+
+    Vítor M. R. Cunha
+    Department of Electrical Engineering
+    Instituto Superior de Engenharia do Porto (ISEP)
+
+The work covered by this notice consists of the MEEC Thesis Template source
+and associated template material, except for files or assets that explicitly
+state different copyright or licensing terms.
+
+Use of the template to create a dissertation or other document does not, by
+itself, place the user's original text, figures, data, code, bibliography, or
+other authored content under the LPPL.
+
+Institutional names, logos, trademarks, coats of arms, and visual-identity
+assets are not licensed by this notice and remain subject to the rights and
+policies of their respective owners.
+
+The full terms and conditions are those of the LPPL. If there is any conflict
+between this notice and the LPPL, the LPPL governs.
