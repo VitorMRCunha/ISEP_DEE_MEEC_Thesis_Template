@@ -87,10 +87,10 @@ Consider the following files and directories:
 
 - `main.tex` — document configuration, metadata and document structure;
 - `preamble.tex` — user-specific packages and custom commands where appropriate;
-- `sampleRefs.bib` — example bibliography database, which may be renamed or replaced.
+- `sampleRefs.bib` — example bibliography database, which may be renamed or replaced;
 - `front/` — front-matter content;
 - `chapters/` — dissertation chapters and appendices as independent `.tex` files;
-- `figures/` — figures and graphical assets;
+- `figures/` — figures and graphical assets.
 
 ## Versioning
 
