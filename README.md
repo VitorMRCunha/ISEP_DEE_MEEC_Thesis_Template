@@ -5,7 +5,7 @@ A maintained LaTeX dissertation template for the Master's Programme in Electrica
 > **Current development target:** v2.0 — first formally versioned GitHub release.
 
 [![License: LPPL 1.3c](https://img.shields.io/badge/License-LPPL%201.3c-blue.svg)](LICENSE)
-[![Release](https://img.shields.io/badge/release-v2.0--dev-orange.svg)](CHANGELOG.md)
+[![Release](https://img.shields.io/badge/release-v2.0--dev-orange.svg)](https://github.com/VitorMRCunha/ISEP_DEE_MEEC_Thesis_Template/releases)
 
 ## Overview
 
@@ -47,7 +47,7 @@ The GitHub repository additionally contains project-maintenance files, documenta
 
 ### Overleaf or similar online editors
 
-1. Download the latest `ISEP_DEE_MEEC_Thesis_Template_vX.Y.Z.zip` asset from the GitHub Releases page.
+1. Download the latest `ISEP_DEE_MEEC_Thesis_Template_vX.Y.zip` from the [GitHub Releases](https://github.com/VitorMRCunha/ISEP_DEE_MEEC_Thesis_Template/releases) page.
 2. Create a new project by uploading the ZIP.
 3. Set `main.tex` as the main document if the platform does not detect it automatically.
 4. Compile the project.
@@ -97,7 +97,7 @@ Consider the following files and directories:
 
 **v2.0** will be the first formally versioned GitHub release. The v2 designation reflects the transition from the template's 2021–2026 Overleaf-based development period to a maintained software release with formal versioning, documentation, automated validation and packaged releases.
 
-See [CHANGELOG.md](CHANGELOG.md).
+See [CHANGELOG.md](https://github.com/VitorMRCunha/ISEP_DEE_MEEC_Thesis_Template/blob/main/CHANGELOG.md).
 
 ## Reporting problems
 
@@ -113,7 +113,7 @@ A useful report includes the template version, operating system, TeX distributio
 
 ## Citation
 
-Citation metadata is provided in [CITATION.cff](CITATION.cff). A DOI may be added to future releases if the project is archived through a service such as Zenodo.
+Citation metadata is provided in [CITATION.cff](https://github.com/VitorMRCunha/ISEP_DEE_MEEC_Thesis_Template/blob/main/CITATION.cff). A DOI may be added to future releases if the project is archived through a service such as Zenodo.
 
 ## Licence and provenance
 
@@ -121,7 +121,7 @@ The template software is distributed under the **LaTeX Project Public License (L
 
 The work has LPPL maintenance status `maintained`, with **Vítor M. R. Cunha** as Current Maintainer.
 
-See [LICENSE](LICENSE) for licensing information and [NOTICE.md](NOTICE.md) for provenance and attribution.
+See [LICENSE](LICENSE) for licensing information and [NOTICE.md](https://github.com/VitorMRCunha/ISEP_DEE_MEEC_Thesis_Template/blob/main/NOTICE.md) for provenance and attribution.
 
 Dissertations and other original works created using this template are not automatically licensed under the template's licence.
 
