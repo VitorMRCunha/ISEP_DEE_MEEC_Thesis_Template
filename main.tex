@@ -1,0 +1,132 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% ISEP-DEE MEEC Dissertation Template, by Vitor M. R. Cunha - v2.0, Jul 2026
+% Suggestions and comments are welcomed (vrc at isep dot ipp dot pt)
+%
+% Template provided as is, NO SUPPORT will be given. 
+%
+% Edit only the configuration fields and chapter inclusions, read the comments below.
+%
+% The institutional formatting is defined exclusively by the MEEC Dissertation Template Class.
+%
+% Full template release available at the MEEC Moodle course page (ZIP file) or GitHub:
+% 
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% MAIN SETTINGS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[
+MEECAS,			% Use this option to select your DEE degree, options: MEECAS, MEECSA, MEECPI, MEECTE
+portuguese,		% Select document language, options: portuguese, english
+%draft,			% Uncomment for draft mode
+%finalversion	% Uncomment to print examination committee members, see 'DISSERTATION INFORMATION'   
+]{DEEclass}
+
+% Use the 'preamble.tex' file (root folder) do add additional packages and document-specific macros only.
+\input{preamble}		 
+
+% Change the 'sampleRefs.bib' file name to match your bibliographic database (.bib) file.
+\addbibresource{sampleRefs.bib} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% DISSERTATION INFORMATION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\thesistitle{Título da Dissertação} % Your dissertation title
+
+%\subdate{2026-01-01} 				% Uncomment for static submission date (ISO format: YYYY-MM-DD)
+									% Compilation date is used otherwise
+
+\author{Nome Completo do Candidato}	% Your full name
+\studentnumber{1234567}				% Your student number 
+
+\supervisor							% Your ISEP supervisor's name and email
+	{Nome do Orientador}
+	{xxx@isep.ipp.pt}		
+\cosupervisor						% Your co-supervisor's name and email
+	{Nome do Coorientador}			% Comment these lines if not needed
+	{xxx@isep.ipp.pt}	
+\company{Nome da Empresa}			% The company name where you developed your work, comment this line if not needed
+\cpsupervisor						% Your Company supervisor's name and email
+	{Nome do Orientador da Empresa}	% Comment these lines if not needed
+	{xxx@emailaddress.com}	
+
+% Use the DEEclass 'finalversion' option to display:
+\committepresident{Nome do presidente, DEE/ISEP}	% Thesis examination committee chair: name and affiliation
+\committeememberone{Nome do vogal, DDD/PPPP}		% Thesis examination committee member 1: name and affiliation
+\committeemembertwo{Nome do vogal, DEE/ISEP}		% Thesis examination committee member 2: name and affiliation
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% AI USAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% State whether generative AI tools were used. Mandatory: use exactly yes or no
+\AIusage{yes}		
+
+% The following fields are mandatory only when AIusage=yes 
+
+% List all AI tools used (comma separated list).
+% (Examples:)
+\AItools{OpenAI ChatGPT, Microsoft Copilot}		
+
+% Select the categories of AI assistance (comma separated list). Available values: brainstorming, literature-search, 
+% translation, summarization, text-generation, text-review, code-generation, visualization, data-analysis, other.
+% (Examples:)
+\AIaids{summarization, code-generation, text-review, visualization}
+
+% Describe each distinct use of generative AI as a separate \item. Refer to
+% tools by their number and assistance categories by their letter. Declare where 
+% the tool was used and for what purpose.
+% (Examples:)
+\begin{AItoolsdescription}
+\item Em toda a dissertação foram utilizadas as ferramentas (1) e (2) na
+categoria (f), para apoio à revisão linguística e melhoria da clareza do texto.
+
+\item No desenvolvimento do código MATLAB descrito no Capítulo 4 foi utilizada
+a ferramenta (2) nas categorias (g) e (h), para gerar funções auxiliares e
+apoiar a visualização gráfica dos resultados, nomeadamente as Figuras 3.1 e 3.3.
+
+\item A ferramenta (1) foi utilizada na categoria (d) nas Secções 3.2 e 3.4
+e na discussão dos resultados da Secção 5.2, para resumir e comparar informação
+proveniente das fontes bibliográficas previamente selecionadas pelo autor.
+\end{AItoolsdescription}
+						
+%%%%%%%%%%%%%%%%%%%%%%%%%% USER DEFINED FRONTMATTER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Consider the following files in the 'front' folder of the template dirtree:
+\makeglossaries						
+\input{front/0_glossary}	% Edit this file to define your glossary entries list
+\input{front/0_acronyms}	% Edit this file to define your acronyms entries list
+\input{front/0_symbols}		% Edit this file to define your symbols entries list
+
+% Edit the front/1_dedicatory file if you want to dedicate your work to someone
+\IncludeDedication			% Comment this line if you dont want to use the Dedicatory section
+
+% Edit the front/2_acknowledgements file to add the due acknowledgements
+\IncludeAcknowledgements	% Comment this line if you dont want to use the Acknowledgements section
+
+% Edit the front/3_abstract	to write the dissertation Abstract (in 2 languages)
+
+% Edit the front/4_frontmatterlists	to select the lists to be shown in the rendered PDF
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%% DISSERTATION MAIN STRUCTURE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Include the chapters of the dissertation as separate files from the 'chapters' folder:
+
+\include{chapters/chapter1}
+\include{chapters/chapter2}		
+%\include{chapters/chapter3}	% Uncomment the lines as you write the chapters,
+								% where 'chapter3' refers to a file chapter3.tex
+%...							% in the 'chapters' folder
+								
+\include{chapters/chapter6}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Print the bibliographic references.
+\printbibreferences	
+							
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Include the appendices of the dissertation as separate files from the 'chapters' folder:
+\begin{appendices}
+
+\include{chapters/appendixA}	% Uncomment the lines as you write the appendices,
+%\include{chapters/appendixB}	% or comment the lines if not used
+
+\end{appendices}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}  
