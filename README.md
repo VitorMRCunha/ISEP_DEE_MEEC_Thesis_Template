@@ -64,7 +64,7 @@ Install a current TeX distribution such as:
 
 Use it together with a LaTeX editor such as TeXstudio, TeXmaker or VS Code with a LaTeX extension.
 
-Open `main.tex` and use the editor's normal build workflow. The template uses BibLaTeX/Biber and glossary tooling, so ensure these are available in the installed TeX distribution.
+Open `main.tex` from the `ISEP_DEE_MEEC_Thesis_Template_vX.Y.zip` and use the editor's normal build workflow. The template uses BibLaTeX/Biber and glossary tooling, so ensure these are available in the installed TeX distribution.
 
 After the first successful compilation, **read the generated PDF before replacing the sample content**.
 
