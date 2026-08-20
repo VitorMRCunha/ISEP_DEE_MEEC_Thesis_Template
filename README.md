@@ -9,7 +9,7 @@ A maintained LaTeX dissertation template for the Master's Programme in Electrica
 
 ## Overview
 
-The MEEC Thesis Template provides a ready-to-use LaTeX structure for MEEC dissertations, including institutional formatting, automated title/front matter, dissertation metadata, bibliography management, glossaries and acronym/symbol lists and  academic-integrity declarations.
+The MEEC Thesis Template provides a ready-to-use LaTeX structure for MEEC dissertations, including institutional formatting, automated title/front matter, dissertation metadata, bibliography management, glossaries and acronym/symbol lists and academic-integrity declarations.
 
 The project originated in 2021 as an adaptation of the LaTeXTemplates 'Masters/Doctoral Thesis' template available at that time. Since then, the template has undergone extensive independent development, redesign, institutional adaptation and maintenance by Vítor M. R. Cunha.
 
@@ -26,14 +26,14 @@ The project originated in 2021 as an adaptation of the LaTeXTemplates 'Masters/D
 
 ## Template structure
 
-The template release download ZIP file as the content:
+The template release ZIP file has the following contents:
 
 ```text
 ISEP_DEE_MEEC_Thesis_Template_v2.0.0/
 ├── main.tex
-├── DEEclass.cls
-├── sampleRefs.bib
 ├── preamble.tex
+├── sampleRefs.bib
+├── DEEclass.cls
 ├── chapters/
 ├── front/
 ├── figures/
@@ -53,19 +53,33 @@ The GitHub repository additionally contains project-maintenance files, documenta
 4. Compile the project.
 5. Edit the metadata and sample content for your dissertation.
 
-The GitHub repository is the authoritative distribution source. Overleaf is supported only as a editing and compilation workflow.
+The GitHub repository is the authoritative distribution source. Overleaf is supported as an editing and compilation workflow.
 
 ### Local LaTeX installation
 
 Install a current TeX distribution such as:
-- Windows: [TeX Live](www.tug.org) or [MikTeX](miktex.org),
-- macOS: [MacTeX](www.tug.org/mactex/) or [MikTeX](miktex.org),
-- Linux: [TeX Live](www.tug.org) or [MikTeX](miktex.org),
+- Windows: [TeX Live](www.tug.org) or [MiKTeX](miktex.org);
+- macOS: [MacTeX](www.tug.org/mactex/) or [MiKTeX](miktex.org);
+- Linux: [TeX Live](www.tug.org) or [MiKTeX](miktex.org);
 
-together with an editor such as TeXstudio, TeXmaker or VS Code with a LaTeX extension.
+Use it together with a LaTeX editor such as TeXstudio, TeXmaker or VS Code with a LaTeX extension.
 
 Open `main.tex` and use the editor's normal build workflow. The template uses BibLaTeX/Biber and glossary tooling, so ensure these are available in the installed TeX distribution.
 
+After the first successful compilation, **read the generated PDF before replacing the sample content**.
+
+### Read the generated template PDF
+
+The PDF produced by compiling the unmodified template is not only an example document. It is also part of the template documentation and should be read before starting the dissertation.
+
+The sample document contains rules, recommendations and practical guidance for preparing an MEEC dissertation, together with examples of the corresponding LaTeX source. These examples illustrate how to use common document elements and template features correctly.
+
+Students should therefore compile the template and review the generated PDF before deleting or replacing the sample chapters. The generated document and its LaTeX source are intended to be used together:
+
+- the PDF explains rules, recommendations and expected presentation;
+- the .tex source files provide practical LaTeX examples implementing them.
+
+Keeping an untouched copy of the original template release can be useful for later reference.
 
 ## Configuration and use
 
