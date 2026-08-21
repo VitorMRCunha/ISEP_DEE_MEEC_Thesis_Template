@@ -37,6 +37,7 @@ ISEP_DEE_MEEC_Thesis_Template_v2.0/
 ├── chapters/
 ├── front/
 ├── figures/
+├── examples/
 ├── README.md
 └── LICENSE
 ```
@@ -51,7 +52,9 @@ The GitHub repository additionally contains project-maintenance files, documenta
 2. Create a new project by uploading the ZIP to the online tool.
 3. Set `main.tex` as the main document if the platform does not detect it automatically.
 4. Compile the project.
-5. Edit the metadata and sample content for your dissertation.
+5. Compare the generated document with the corresponding reference PDF in the `examples/` folder (PT or EN) to confirm that the template is being rendered correctly.
+6. Read the generated document before replacing the sample content. It contains rules, guidelines and LaTeX examples for preparing the dissertation.
+7. Edit the metadata and sample content for your dissertation.
 
 The GitHub repository is the authoritative distribution source. Overleaf is supported as an editing and compilation workflow.
 
@@ -67,8 +70,9 @@ Use it together with a LaTeX editor such as TeXstudio, TeXmaker or VS Code with 
 2. Download the latest `ISEP_DEE_MEEC_Thesis_Template_vX.Y.zip` from the [GitHub Releases](https://github.com/VitorMRCunha/ISEP_DEE_MEEC_Thesis_Template/releases) page.
 3. Unzip the file keeping the files and directories structure.
 4. Open `main.tex` and use the editor's normal build workflow. The template uses BibLaTeX/Biber and glossary tooling, so ensure these are available in the installed TeX distribution.
-
-After the first successful compilation, **read the generated PDF before replacing the sample content**.
+5. Compare the generated document with the corresponding reference PDF in the `examples/` folder (PT or EN) to confirm that the template is being rendered correctly.
+6. Read the generated document before replacing the sample content. It contains rules, guidelines and LaTeX examples for preparing the dissertation.
+7. Edit the metadata and sample content for your dissertation.
 
 ### Read the generated template PDF
 
