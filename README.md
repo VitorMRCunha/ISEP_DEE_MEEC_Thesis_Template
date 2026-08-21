@@ -48,7 +48,7 @@ The GitHub repository additionally contains project-maintenance files, documenta
 ### Overleaf or similar online editors
 
 1. Download the latest `ISEP_DEE_MEEC_Thesis_Template_vX.Y.zip` from the [GitHub Releases](https://github.com/VitorMRCunha/ISEP_DEE_MEEC_Thesis_Template/releases) page.
-2. Create a new project by uploading the ZIP.
+2. Create a new project by uploading the ZIP to the online tool.
 3. Set `main.tex` as the main document if the platform does not detect it automatically.
 4. Compile the project.
 5. Edit the metadata and sample content for your dissertation.
@@ -57,14 +57,16 @@ The GitHub repository is the authoritative distribution source. Overleaf is supp
 
 ### Local LaTeX installation
 
-Install a current TeX distribution such as:
+1. Install a current TeX distribution such as:
 - Windows: [TeX Live](www.tug.org) or [MiKTeX](miktex.org);
 - macOS: [MacTeX](www.tug.org/mactex/) or [MiKTeX](miktex.org);
 - Linux: [TeX Live](www.tug.org) or [MiKTeX](miktex.org);
 
 Use it together with a LaTeX editor such as TeXstudio, TeXmaker or VS Code with a LaTeX extension.
 
-Open `main.tex` from the `ISEP_DEE_MEEC_Thesis_Template_vX.Y.zip` and use the editor's normal build workflow. The template uses BibLaTeX/Biber and glossary tooling, so ensure these are available in the installed TeX distribution.
+2. Download the latest `ISEP_DEE_MEEC_Thesis_Template_vX.Y.zip` from the [GitHub Releases](https://github.com/VitorMRCunha/ISEP_DEE_MEEC_Thesis_Template/releases) page.
+3. Unzip the file keeping the files and directories structure.
+4. Open `main.tex` and use the editor's normal build workflow. The template uses BibLaTeX/Biber and glossary tooling, so ensure these are available in the installed TeX distribution.
 
 After the first successful compilation, **read the generated PDF before replacing the sample content**.
 
