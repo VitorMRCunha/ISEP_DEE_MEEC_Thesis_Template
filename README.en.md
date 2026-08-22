@@ -1,6 +1,6 @@
 # ISEP DEE MEEC LaTeX Thesis Template
 
-[🇵🇹 Português](README.md) | **🇬🇧 English**
+[Português](README.md) | **English**
 
 A maintained LaTeX dissertation template for the Master's Programme in Electrical and Computer Engineering (MEEC) at the Instituto Superior de Engenharia do Porto (ISEP).
 
