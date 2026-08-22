@@ -1,0 +1,85 @@
+name: Build template
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build ${{ matrix.language }}
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - language: Portuguese
+            code: PT
+            root_file: ci-main-pt.tex
+            pdf_file: ci-main-pt.pdf
+          - language: English
+            code: EN
+            root_file: ci-main-en.tex
+            pdf_file: ci-main-en.pdf
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Create language-specific CI source
+        shell: python
+        env:
+          LANGUAGE_CODE: ${{ matrix.code }}
+          OUTPUT_FILE: ${{ matrix.root_file }}
+        run: |
+          from pathlib import Path
+          import os
+          import re
+
+          source = Path("main.tex").read_text(encoding="utf-8")
+          language = os.environ["LANGUAGE_CODE"]
+          output = Path(os.environ["OUTPUT_FILE"])
+
+          replacement = "portuguese," if language == "PT" else "english,"
+
+          pattern = re.compile(
+              r"(?m)^(?P<indent>\s*)(?:portuguese|english),"
+              r"(?P<rest>\s*%.*Select document language.*)$"
+          )
+
+          modified, count = pattern.subn(
+              lambda m: f"{m.group('indent')}{replacement}{m.group('rest')}",
+              source,
+              count=1,
+          )
+
+          if count != 1:
+              raise SystemExit(
+                  "Could not locate the language option in main.tex."
+              )
+
+          output.write_text(modified, encoding="utf-8")
+
+      - name: Compile ${{ matrix.language }} document
+        uses: xu-cheng/latex-action@v4
+        with:
+          root_file: ${{ matrix.root_file }}
+          texlive_version: 2026
+          os: debian
+
+      - name: Verify generated PDF
+        shell: bash
+        run: test -s "${{ matrix.pdf_file }}"
+
+      - name: Upload compiled PDF
+        uses: actions/upload-artifact@v6
+        with:
+          name: template-${{ matrix.code }}
+          path: ${{ matrix.pdf_file }}
+          if-no-files-found: error
+          retention-days: 14
