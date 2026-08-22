@@ -1,6 +1,6 @@
 # ISEP DEE MEEC LaTeX Thesis Template
 
-**🇵🇹 Português** | [🇬🇧 English](README.en.md)
+**Português** | [English](README.en.md)
 
 Este repositório é a fonte do *template* LaTeX para dissertações do Mestrado em Engenharia Eletrotécnica e de Computadores (MEEC) do Instituto Superior de Engenharia do Porto (ISEP).
 
