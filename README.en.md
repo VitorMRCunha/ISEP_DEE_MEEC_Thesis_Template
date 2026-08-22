@@ -103,7 +103,7 @@ Consider the following files and directories:
 
 ## Versioning
 
-**v2.0** will be the first formally versioned GitHub release. The v2 designation reflects the transition from the template's 2021–2026 Overleaf-based development period to a maintained software release with formal versioning, documentation, automated validation and packaged releases.
+**v2.0** is be the first formally versioned GitHub release. The v2 designation reflects the transition from the template's 2021–2026 Overleaf-based development period to a maintained software release with formal versioning, documentation, automated validation and packaged releases.
 
 See [CHANGELOG.md](https://github.com/VitorMRCunha/ISEP_DEE_MEEC_Thesis_Template/blob/main/CHANGELOG.md).
 
