@@ -31,7 +31,7 @@ The project originated in 2021 as an adaptation of the LaTeXTemplates *Masters/D
 The template release ZIP file has the following contents:
 
 ```text
-ISEP_DEE_MEEC_Thesis_Template_v2.0/
+ISEP_DEE_MEEC_Thesis_Template_vX.Y/
 ├── main.tex
 ├── preamble.tex
 ├── sampleRefs.bib
