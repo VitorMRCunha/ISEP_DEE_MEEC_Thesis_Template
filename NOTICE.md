@@ -1,4 +1,4 @@
-# Copyright, provenance, and attribution notice
+# Copyright, provenance and attribution notice
 
 ## Current project
 
