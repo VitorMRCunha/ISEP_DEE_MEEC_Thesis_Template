@@ -1,32 +1,34 @@
 # ISEP DEE MEEC LaTeX Thesis Template
 
-A maintained LaTeX dissertation template for the Master's Programme in Electrical and Computer Engineering (MEEC) at the Instituto Superior de Engenharia do Porto (ISEP).
+**🇵🇹 Português** | [🇬🇧 English](README.en.md)
 
-> **Current development target:** v2.0 — first formally versioned GitHub release.
+Um template LaTeX mantido para dissertações do Mestrado em Engenharia Eletrotécnica e de Computadores (MEEC) do Instituto Superior de Engenharia do Porto (ISEP).
 
-[![License: LPPL 1.3c](https://img.shields.io/badge/License-LPPL%201.3c-blue.svg)](LICENSE)
-[![Release](https://img.shields.io/badge/release-v2.0--dev-orange.svg)](https://github.com/VitorMRCunha/ISEP_DEE_MEEC_Thesis_Template/releases)
+> **Versão atualmente em desenvolvimento:** v2.0 — primeira versão formalmente publicada através do GitHub.
 
-## Overview
+[![Licença: LPPL 1.3c](https://img.shields.io/badge/Licen%C3%A7a-LPPL%201.3c-blue.svg)](LICENSE)
+[![Versão](https://img.shields.io/badge/vers%C3%A3o-v2.0--dev-orange.svg)](https://github.com/VitorMRCunha/ISEP_DEE_MEEC_Thesis_Template/releases)
 
-The MEEC Thesis Template provides a ready-to-use LaTeX structure for MEEC dissertations, including institutional formatting, automated title/front matter, dissertation metadata, bibliography management, glossaries and acronym/symbol lists and academic-integrity declarations.
+## Visão geral
 
-The project originated in 2021 as an adaptation of the LaTeXTemplates 'Masters/Doctoral Thesis' template available at that time. Since then, the template has undergone extensive independent development, redesign, institutional adaptation and maintenance by Vítor M. R. Cunha.
+O MEEC Thesis Template disponibiliza uma estrutura LaTeX pronta a utilizar para dissertações do MEEC, incluindo formatação institucional, geração automática das capas e elementos pré-textuais, metadados da dissertação, gestão da bibliografia, glossários, listas de acrónimos e símbolos e declarações de integridade académica.
 
-## Main features
+O projeto teve origem em 2021 como uma adaptação do template *Masters/Doctoral Thesis* da LaTeXTemplates disponível nessa altura. Desde então, o template tem sido objeto de desenvolvimento independente, reformulação, adaptação institucional e manutenção extensivos por Vítor M. R. Cunha.
 
-- Portuguese or English as the main document language.
-- MEEC specialisation selection through class options.
-- Automatic cover pages and institutional front matter.
-- Centralised dissertation metadata.
-- Validation of mandatory metadata.
-- Draft and final-document modes.
-- Automatic academic-integrity declaration.
-- BibLaTeX/Biber bibliography support.
+## Principais funcionalidades
 
-## Template structure
+- Português ou inglês como língua principal do documento.
+- Seleção da especialização do MEEC através das opções da classe.
+- Geração automática das capas e elementos pré-textuais institucionais.
+- Centralização dos metadados da dissertação.
+- Validação dos metadados obrigatórios.
+- Modos de documento provisório e final.
+- Geração automática da declaração de integridade académica.
+- Gestão da bibliografia através de BibLaTeX/Biber.
 
-The template release ZIP file has the following contents:
+## Estrutura do template
+
+O ficheiro ZIP disponibilizado em cada versão do template tem a seguinte estrutura:
 
 ```text
 ISEP_DEE_MEEC_Thesis_Template_v2.0/
@@ -39,97 +41,98 @@ ISEP_DEE_MEEC_Thesis_Template_v2.0/
 ├── figures/
 ├── examples/
 ├── README.md
+├── README.en.md
 └── LICENSE
 ```
 
-The GitHub repository additionally contains project-maintenance files, documentation, CI/release workflows and development history. These files are not required in the student release package.
+O repositório GitHub contém adicionalmente ficheiros destinados à manutenção do projeto, documentação, fluxos de integração e publicação automática e histórico de desenvolvimento. Estes ficheiros não são necessários no pacote distribuído aos estudantes.
 
-## Quick start
+## Início rápido
 
-### Overleaf or similar online editors
+### Overleaf ou outros editores online
 
-1. Download the latest `ISEP_DEE_MEEC_Thesis_Template_vX.Y.zip` from the [GitHub Releases](https://github.com/VitorMRCunha/ISEP_DEE_MEEC_Thesis_Template/releases) page.
-2. Create a new project by uploading the ZIP to the online tool.
-3. Set `main.tex` as the main document if the platform does not detect it automatically.
-4. Compile the project.
-5. Compare the generated document with the corresponding reference PDF in the `examples/` folder (PT or EN) to confirm that the template is being rendered correctly.
-6. Read the generated document before replacing the sample content. It contains rules, guidelines and LaTeX examples for preparing the dissertation.
-7. Edit the metadata and sample content for your dissertation.
+1. Descarregue o ficheiro `ISEP_DEE_MEEC_Thesis_Template_vX.Y.zip` mais recente a partir da página de [Releases do GitHub](https://github.com/VitorMRCunha/ISEP_DEE_MEEC_Thesis_Template/releases).
+2. Crie um novo projeto carregando o ficheiro ZIP para a plataforma online.
+3. Defina `main.tex` como documento principal caso a plataforma não o detete automaticamente.
+4. Compile o projeto.
+5. Compare o documento gerado com o PDF de referência correspondente, disponível na pasta `examples/` (PT ou EN), para confirmar que o template está a ser corretamente processado e apresentado.
+6. Leia o documento gerado antes de substituir o conteúdo de exemplo. Este contém regras, orientações e exemplos de LaTeX para a preparação da dissertação.
+7. Edite os metadados e substitua o conteúdo de exemplo pelo conteúdo da sua dissertação.
 
-The GitHub repository is the authoritative distribution source. Overleaf is supported as an editing and compilation workflow.
+O repositório GitHub é a fonte oficial de distribuição do template. O Overleaf continua a ser suportado como ambiente de edição e compilação.
 
-### Local LaTeX installation
+### Instalação local de LaTeX
 
-1. Install a current TeX distribution such as:
-- Windows: [TeX Live](www.tug.org) or [MiKTeX](miktex.org);
-- macOS: [MacTeX](www.tug.org/mactex/) or [MiKTeX](miktex.org);
-- Linux: [TeX Live](www.tug.org) or [MiKTeX](miktex.org);
+1. Instale uma distribuição TeX atual, por exemplo:
+   - Windows: [TeX Live](https://www.tug.org/texlive/) ou [MiKTeX](https://miktex.org/);
+   - macOS: [MacTeX](https://www.tug.org/mactex/) ou [MiKTeX](https://miktex.org/);
+   - Linux: [TeX Live](https://www.tug.org/texlive/) ou [MiKTeX](https://miktex.org/).
 
-Use it together with a LaTeX editor such as TeXstudio, TeXmaker or VS Code with a LaTeX extension.
+   Utilize-a em conjunto com um editor LaTeX, como o TeXstudio, TeXmaker ou VS Code com uma extensão para LaTeX.
 
-2. Download the latest `ISEP_DEE_MEEC_Thesis_Template_vX.Y.zip` from the [GitHub Releases](https://github.com/VitorMRCunha/ISEP_DEE_MEEC_Thesis_Template/releases) page.
-3. Unzip the file keeping the files and directories structure.
-4. Open `main.tex` and use the editor's normal build workflow. The template uses BibLaTeX/Biber and glossary tooling, so ensure these are available in the installed TeX distribution.
-5. Compare the generated document with the corresponding reference PDF in the `examples/` folder (PT or EN) to confirm that the template is being rendered correctly.
-6. Read the generated document before replacing the sample content. It contains rules, guidelines and LaTeX examples for preparing the dissertation.
-7. Edit the metadata and sample content for your dissertation.
+2. Descarregue o ficheiro `ISEP_DEE_MEEC_Thesis_Template_vX.Y.zip` mais recente a partir da página de [Releases do GitHub](https://github.com/VitorMRCunha/ISEP_DEE_MEEC_Thesis_Template/releases).
+3. Descomprima o ficheiro, preservando a estrutura de ficheiros e diretórios.
+4. Abra `main.tex` e utilize o processo de compilação normal do editor. O template utiliza BibLaTeX/Biber e ferramentas para geração de glossários, pelo que estas deverão estar disponíveis na distribuição TeX instalada.
+5. Compare o documento gerado com o PDF de referência correspondente, disponível na pasta `examples/` (PT ou EN), para confirmar que o template está a ser corretamente processado e apresentado.
+6. Leia o documento gerado antes de substituir o conteúdo de exemplo. Este contém regras, orientações e exemplos de LaTeX para a preparação da dissertação.
+7. Edite os metadados e substitua o conteúdo de exemplo pelo conteúdo da sua dissertação.
 
-### Read the generated template PDF
+### Leia o PDF gerado pelo template
 
-The PDF produced by compiling the unmodified template is not only an example document. It is also part of the template documentation and should be read before starting the dissertation.
+O PDF produzido através da compilação do template sem alterações não é apenas um documento de exemplo. Constitui também parte da documentação do template e deverá ser lido antes de iniciar a preparação da dissertação.
 
-The sample document contains rules, recommendations and practical guidance for preparing an MEEC dissertation, together with examples of the corresponding LaTeX source. These examples illustrate how to use common document elements and template features correctly.
+O documento de exemplo contém regras, recomendações e orientações práticas para a preparação de uma dissertação do MEEC, juntamente com exemplos do código LaTeX correspondente. Estes exemplos ilustram a utilização correta de elementos comuns do documento e das funcionalidades disponibilizadas pelo template.
 
-Students should therefore compile the template and review the generated PDF before deleting or replacing the sample chapters. The generated document and its LaTeX source are intended to be used together:
+Os estudantes deverão, por isso, compilar o template e consultar o PDF gerado antes de eliminar ou substituir os capítulos de exemplo. O documento gerado e o respetivo código LaTeX foram concebidos para ser utilizados em conjunto:
 
-- the PDF explains rules, recommendations and expected presentation;
-- the .tex source files provide practical LaTeX examples implementing them.
+- o PDF apresenta regras, recomendações e exemplos da apresentação esperada;
+- os ficheiros `.tex` fornecem exemplos práticos de LaTeX que implementam esses elementos.
 
-Keeping an untouched copy of the original template release can be useful for later reference.
+Pode ser útil conservar uma cópia inalterada da versão original do template para consulta posterior.
 
-## Configuration and use
+## Configuração e utilização
 
-Consider the following files and directories:
+Considere os seguintes ficheiros e diretórios:
 
-- `main.tex` — document configuration, metadata and document structure;
-- `preamble.tex` — user-specific packages and custom commands where appropriate;
-- `sampleRefs.bib` — example bibliography database, which may be renamed or replaced;
-- `front/` — front-matter content;
-- `chapters/` — dissertation chapters and appendices as independent `.tex` files;
-- `figures/` — figures and graphical assets.
+- `main.tex` — configuração do documento, metadados e estrutura do documento;
+- `preamble.tex` — pacotes adicionais e comandos personalizados definidos pelo utilizador, quando necessário;
+- `sampleRefs.bib` — base de dados bibliográfica de exemplo, que pode ser renomeada ou substituída;
+- `front/` — conteúdo dos elementos pré-textuais;
+- `chapters/` — capítulos e apêndices da dissertação em ficheiros `.tex` independentes;
+- `figures/` — figuras e outros elementos gráficos.
 
-## Versioning
+## Versionamento
 
-**v2.0** will be the first formally versioned GitHub release. The v2 designation reflects the transition from the template's 2021–2026 Overleaf-based development period to a maintained software release with formal versioning, documentation, automated validation and packaged releases.
+A **v2.0** será a primeira versão formalmente publicada através do GitHub. A designação v2 reflete a transição do período de desenvolvimento baseado no Overleaf, entre 2021 e 2026, para um projeto de software mantido, com versionamento formal, documentação, validação automática e pacotes de distribuição versionados.
 
-See [CHANGELOG.md](https://github.com/VitorMRCunha/ISEP_DEE_MEEC_Thesis_Template/blob/main/CHANGELOG.md).
+Consulte o [CHANGELOG.md](https://github.com/VitorMRCunha/ISEP_DEE_MEEC_Thesis_Template/blob/main/CHANGELOG.md).
 
-## Reporting problems
+## Reportar problemas
 
-Before opening an issue:
+Antes de abrir um *issue*:
 
-1. verify that the problem occurs with the latest tagged release;
-2. perform a clean rebuild;
-3. confirm that Biber and the required glossary tools are installed;
-4. check that mandatory metadata is defined;
-5. reduce the problem to a minimal reproducible example when possible.
+1. confirme que o problema ocorre com a versão mais recente publicada;
+2. efetue uma compilação limpa do projeto;
+3. confirme que o Biber e as ferramentas necessárias para os glossários estão instalados;
+4. confirme que todos os metadados obrigatórios estão definidos;
+5. reduza, sempre que possível, o problema a um exemplo mínimo reproduzível.
 
-A useful report includes the template version, operating system, TeX distribution/version, editor or compilation command, relevant log output and the smallest set of files needed to reproduce the problem.
+Um relatório de problema útil deverá incluir a versão do template, o sistema operativo, a distribuição e versão de TeX, o editor ou comando de compilação utilizado, a parte relevante do ficheiro de *log* e o menor conjunto possível de ficheiros necessário para reproduzir o problema.
 
-## Citation
+## Citação
 
-Citation metadata is provided in [CITATION.cff](https://github.com/VitorMRCunha/ISEP_DEE_MEEC_Thesis_Template/blob/main/CITATION.cff). A DOI may be added to future releases if the project is archived through a service such as Zenodo.
+Os metadados para citação do projeto encontram-se no ficheiro [CITATION.cff](https://github.com/VitorMRCunha/ISEP_DEE_MEEC_Thesis_Template/blob/main/CITATION.cff). Poderá ser adicionado um DOI a versões futuras caso o projeto seja arquivado através de um serviço como o Zenodo.
 
-## Licence and provenance
+## Licença e proveniência
 
-The template software is distributed under the **LaTeX Project Public License (LPPL), version 1.3c or later**, unless an individual file states otherwise.
+O software do template é distribuído ao abrigo da **LaTeX Project Public License (LPPL), versão 1.3c ou posterior**, salvo indicação em contrário num ficheiro específico.
 
-The work has LPPL maintenance status `maintained`, with **Vítor M. R. Cunha** as Current Maintainer.
+O projeto tem o estado de manutenção `maintained` segundo a LPPL, sendo **Vítor M. R. Cunha** o *Current Maintainer*.
 
-See [LICENSE](LICENSE) for licensing information and [NOTICE.md](https://github.com/VitorMRCunha/ISEP_DEE_MEEC_Thesis_Template/blob/main/NOTICE.md) for provenance and attribution.
+Consulte o ficheiro [LICENSE](LICENSE) para informação sobre a licença e o [NOTICE.md](https://github.com/VitorMRCunha/ISEP_DEE_MEEC_Thesis_Template/blob/main/NOTICE.md) para informação sobre a proveniência e atribuição.
 
-Dissertations and other original works created using this template are not automatically licensed under the template's licence.
+As dissertações e outros trabalhos originais criados utilizando este template não ficam automaticamente sujeitos à licença do template.
 
-## Disclaimer
+## Aviso
 
-This repository is provided without warranty. Institutional names, logos, trademarks and visual-identity assets remain subject to the rights and policies of their respective owners. Repository publication does not by itself imply official institutional endorsement unless that status is explicitly documented.
+Este repositório é disponibilizado sem qualquer garantia. Os nomes institucionais, logótipos, marcas e elementos de identidade visual permanecem sujeitos aos direitos e políticas dos respetivos titulares. A publicação deste repositório não implica, por si só, reconhecimento ou aprovação oficial por parte da instituição, salvo se tal for explicitamente indicado.
