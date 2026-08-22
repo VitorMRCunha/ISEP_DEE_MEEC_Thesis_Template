@@ -1,0 +1,94 @@
+name: Package published release
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  package:
+    name: Build and package ${{ github.event.release.tag_name }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out released source
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.release.tag_name }}
+
+      - name: Validate release tag
+        shell: bash
+        run: |
+          tag="${{ github.event.release.tag_name }}"
+          if [[ ! "$tag" =~ ^v[0-9]+\.[0-9]+(\.[0-9]+)?$ ]]; then
+            echo "::error::Release tag '$tag' must look like v2.0 or v2.0.1."
+            exit 1
+          fi
+
+      - name: Create Portuguese and English build sources
+        shell: python
+        run: |
+          from pathlib import Path
+          import re
+
+          source = Path("main.tex").read_text(encoding="utf-8")
+
+          pattern = re.compile(
+              r"(?m)^(?P<indent>\s*)(?:portuguese|english),"
+              r"(?P<rest>\s*%.*Select document language.*)$"
+          )
+
+          def write_variant(language_option, filename):
+              modified, count = pattern.subn(
+                  lambda m: (
+                      f"{m.group('indent')}{language_option},"
+                      f"{m.group('rest')}"
+                  ),
+                  source,
+                  count=1,
+              )
+              if count != 1:
+                  raise SystemExit(
+                      "Could not locate the language option in main.tex."
+                  )
+              Path(filename).write_text(modified, encoding="utf-8")
+
+          write_variant("portuguese", "release-main-pt.tex")
+          write_variant("english", "release-main-en.tex")
+
+      - name: Compile Portuguese reference PDF
+        uses: xu-cheng/latex-action@v4
+        with:
+          root_file: release-main-pt.tex
+          texlive_version: 2026
+          os: debian
+
+      - name: Compile English reference PDF
+        uses: xu-cheng/latex-action@v4
+        with:
+          root_file: release-main-en.tex
+          texlive_version: 2026
+          os: debian
+
+      - name: Verify reference PDFs
+        shell: bash
+        run: |
+          test -s release-main-pt.pdf
+          test -s release-main-en.pdf
+
+      - name: Build student release ZIP
+        shell: bash
+        run: |
+          python scripts/package-release.py \
+            --tag "${{ github.event.release.tag_name }}" \
+            --pt-pdf release-main-pt.pdf \
+            --en-pdf release-main-en.pdf
+
+      - name: Upload student ZIP to GitHub Release
+        uses: softprops/action-gh-release@v3
+        with:
+          tag_name: ${{ github.event.release.tag_name }}
+          files: dist/ISEP_DEE_MEEC_Thesis_Template_*.zip
+          fail_on_unmatched_files: true
