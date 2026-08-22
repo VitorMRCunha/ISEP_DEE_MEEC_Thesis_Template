@@ -51,13 +51,21 @@ O repositório GitHub contém adicionalmente ficheiros destinados à manutençã
 
 ### Overleaf ou outros editores *online*
 
-1. Descarregue o ficheiro `ISEP_DEE_MEEC_Thesis_Template_vX.Y.zip` mais recente a partir da página de [Releases do GitHub](https://github.com/VitorMRCunha/ISEP_DEE_MEEC_Thesis_Template/releases).
-2. Crie um novo projeto carregando o ficheiro ZIP para a plataforma *online*.
+Pode iniciar um projeto através de um dos seguintes métodos:
+
+**Opção A — Importar a partir do GitHub**
+1. Faça um *fork* do [repositório ISEP DEE MEEC Thesis Template](https://github.com/VitorMRCunha/ISEP_DEE_MEEC_Thesis_Template) para a sua conta GitHub.
+2. Crie um novo projeto no editor LaTeX online importando o repositório GitHub resultante do *fork*.
 3. Defina `main.tex` como documento principal caso a plataforma não o detecte automaticamente.
 4. Compile o projeto.
-5. Compare o documento gerado com o PDF de referência correspondente, disponível na pasta `examples/` (PT ou EN), para confirmar que o *template* está a ser corretamente processado e apresentado.
+5. Compare o documento gerado com o PDF de referência correspondente, disponível na pasta `examples/` (PT ou EN), para confirmar que o template está a ser corretamente processado e apresentado.
 6. Leia o documento gerado antes de substituir o conteúdo de exemplo. Este contém regras, orientações e exemplos LaTeX para a preparação da dissertação.
 7. Edite os metadados e substitua o conteúdo de exemplo pelo conteúdo da sua dissertação.
+
+**Opção B — Carregar o ZIP de uma versão publicada**
+1. Descarregue o ficheiro `ISEP_DEE_MEEC_Thesis_Template_vX.Y.zip` mais recente a partir da página de [Releases do GitHub](https://github.com/VitorMRCunha/ISEP_DEE_MEEC_Thesis_Template/releases).
+2. Crie um novo projeto carregando o ficheiro ZIP para a plataforma *online*.
+3. Siga os passos 3–7 acima.
 
 **O repositório GitHub é a fonte oficial de distribuição do *template***. O Overleaf continua a ser suportado mas apenas como ambiente de edição e compilação.
 
