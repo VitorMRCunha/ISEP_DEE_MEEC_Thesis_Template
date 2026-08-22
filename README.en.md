@@ -51,15 +51,25 @@ The GitHub repository additionally contains project-maintenance files, documenta
 
 ### Overleaf or similar online editors
 
-1. Download the latest `ISEP_DEE_MEEC_Thesis_Template_vX.Y.zip` from the [GitHub Releases](https://github.com/VitorMRCunha/ISEP_DEE_MEEC_Thesis_Template/releases) page.
-2. Create a new project by uploading the ZIP to the online tool.
+You can start a project using either of the following methods:
+
+**Option A — Import from GitHub**
+
+1. Fork the [ISEP DEE MEEC Thesis Template repository](https://github.com/VitorMRCunha/ISEP_DEE_MEEC_Thesis_Template) to your GitHub account.
+2. Create a new project in the online LaTeX editor by importing the forked GitHub repository.
 3. Set `main.tex` as the main document if the platform does not detect it automatically.
 4. Compile the project.
 5. Compare the generated document with the corresponding reference PDF in the `examples/` folder (PT or EN) to confirm that the template is being rendered correctly.
 6. Read the generated document before replacing the sample content. It contains rules, guidelines and LaTeX examples for preparing the dissertation.
 7. Edit the metadata and sample content for your dissertation.
 
-The GitHub repository is the authoritative distribution source. Overleaf is supported as an editing and compilation workflow.
+**Option B — Upload a release ZIP**
+
+1. Download the latest `ISEP_DEE_MEEC_Thesis_Template_vX.Y.zip` from the [GitHub Releases](https://github.com/VitorMRCunha/ISEP_DEE_MEEC_Thesis_Template/releases) page.
+2. Create a new project by uploading the ZIP to the online LaTeX editor.
+3. Follow steps 3–7 above.
+
+**The GitHub repository is the authoritative distribution source**. Overleaf is still supported as an editing and compilation workflow.
 
 ### Local LaTeX installation
 
