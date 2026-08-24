@@ -2,7 +2,7 @@
 
 **Português** | [English](README.en.md)
 
-Este repositório é a fonte do *template* LaTeX para dissertações do Mestrado em Engenharia Eletrotécnica e de Computadores (MEEC) do Instituto Superior de Engenharia do Porto (ISEP).
+Este repositório é a fonte oficial do *template* LaTeX para dissertações do Mestrado em Engenharia Eletrotécnica e de Computadores (MEEC) do Instituto Superior de Engenharia do Porto (ISEP).
 
 > **Versão atualmente em desenvolvimento:** v2.0 — primeira versão formalmente publicada através do GitHub.
 
