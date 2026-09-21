@@ -49,4 +49,4 @@ First formally versioned GitHub release of the ISEP DEE MEEC Thesis Template.
 
 ## Historical development
 
-The template existed and evolved from 2021 to 2026 before formal GitHub versioning. Those versions are documented historically rather than being assigned retrospective Git tags. See [HISTORY.md](HISTORY.md).
+The template existed and evolved from 2021 to 2026 before formal GitHub versioning. Those versions are documented historically rather than being assigned retrospective Git tags.
