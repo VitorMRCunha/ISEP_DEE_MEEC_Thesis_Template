@@ -968,7 +968,7 @@ KOMA-script documentation for details.}]{fancyhdr}
 %	TITLE PAGES DESIGN
 %----------------------------------------------------------------------------------------
 
-\newcommand{\university}{Polit\'{e}cnico do Porto}
+\newcommand{\university}{Universidade T\'{e}cnica do Porto}
 \newcommand{\school}{Instituto Superior de Engenharia do Porto}
 \newcommand{\department}{Departamento de Engenharia Eletrot\'{e}cnica}
 \newcommand{\degree}{}
@@ -1181,7 +1181,7 @@ KOMA-script documentation for details.}]{fancyhdr}
 
     \end{description}
 
-    Declaro ainda que tenho pleno conhecimento do Código de Conduta Ética do P.PORTO.
+    Declaro ainda que tenho pleno conhecimento do Código de Conduta Ética da UTP.
 
     \vspace{1.5cm}
 
@@ -1211,7 +1211,7 @@ KOMA-script documentation for details.}]{fancyhdr}
 
     \end{description}
 
-    I further declare that I am fully aware of the P.PORTO Code of Ethical Conduct.
+    I further declare that I am fully aware of the UTP Code of Ethical Conduct.
 
     \vspace{1.5cm}
 
@@ -1481,67 +1481,62 @@ KOMA-script documentation for details.}]{fancyhdr}
         }%
         \textit{Nenhuma ferramenta foi identificada.}
       }{%
-        \begin{enumerate}[
-          label=(\arabic*),
-          leftmargin=2.8em,
-          labelsep=0.6em,
+        \begin{itemize}[
+          leftmargin=2em,
           itemsep=0.2em,
           topsep=0.3em
         ]
           \forlistloop{\printAItoolitem}{\AItoolslist}
-        \end{enumerate}
+        \end{itemize}
       }
 
       \subsection*{%
         Declaro que utilizei as ferramentas de IA generativa para:%
       }
 
-		\begin{enumerate}[
-  		leftmargin=3.8em,
-  		labelwidth=2.6em,
-  		labelsep=0.5em,
-  		align=left,
-  		itemsep=0.5em,
-  		topsep=0.3em
-		]
+      \begin{description}[
+        leftmargin=2.2em,
+        labelwidth=1.2em,
+        labelsep=0.6em,
+        itemsep=0.5em,
+        align=left
+      ]
 
-        \item[\AIaidcheckbox{brainstorming}\ (a)]
+        \item[\AIaidcheckbox{brainstorming}]
         apoiar a geração de ideias, definição de objetivos ou estrutura da dissertação;
 
-        \item[\AIaidcheckbox{literature-search}\ (b)]
+        \item[\AIaidcheckbox{literature-search}]
         sugerir referências bibliográficas, localizar ou organizar literatura científica;
 
-        \item[\AIaidcheckbox{translation}\ (c)]
+        \item[\AIaidcheckbox{translation}]
         traduzir texto entre idiomas;
 
-        \item[\AIaidcheckbox{summarization}\ (d)]
+        \item[\AIaidcheckbox{summarization}]
         resumir, sintetizar ou comparar textos de fontes bibliográficas;
 
-        \item[\AIaidcheckbox{text-generation}\ (e)]
+        \item[\AIaidcheckbox{text-generation}]
         sugerir ou gerar texto de partes da dissertação;
 
-        \item[\AIaidcheckbox{text-review}\ (f)]
+        \item[\AIaidcheckbox{text-review}]
         efetuar a revisão linguística ou correção ortográfica de partes da dissertação;
 
-        \item[\AIaidcheckbox{code-generation}\ (g)]
+        \item[\AIaidcheckbox{code-generation}]
         gerar ou completar código, por exemplo, em MATLAB, Python ou outras linguagens;
 
-        \item[\AIaidcheckbox{visualization}\ (h)]
+        \item[\AIaidcheckbox{visualization}]
         apoiar a visualização de dados ou gerar figuras, diagramas ou imagens;
 
-        \item[\AIaidcheckbox{data-analysis}\ (i)]
+        \item[\AIaidcheckbox{data-analysis}]
         realizar a análise ou interpretação automática de dados, por exemplo, classificação, \textit{clustering} ou outros métodos;
 
-        \item[\AIaidcheckbox{other}\ (j)]
+        \item[\AIaidcheckbox{other}]
         outros fins não enquadrados nas categorias anteriores.
 
-      \end{enumerate}
+      \end{description}
 
       \subsection*{Descrição da utilização:}
 
-      \begin{enumerate}[leftmargin=2.8em,itemsep=0.5em,topsep=0.4em]
-        \AItoolsdescriptioncontent
-      \end{enumerate}
+      \AItoolsdescriptioncontent
 
     }{%
       \chapter{Declaration of Generative Artificial Intelligence Use}
@@ -1557,67 +1552,62 @@ KOMA-script documentation for details.}]{fancyhdr}
         }%
         \textit{No tools were identified.}
       }{%
-        \begin{enumerate}[
-          label=(\arabic*),
-          leftmargin=2.8em,
-          labelsep=0.6em,
+        \begin{itemize}[
+          leftmargin=2em,
           itemsep=0.2em,
           topsep=0.3em
         ]
           \forlistloop{\printAItoolitem}{\AItoolslist}
-        \end{enumerate}
+        \end{itemize}
       }
 
       \subsection*{%
         I declare that I used generative AI tools to:%
       }
 
-		\begin{enumerate}[
-  		leftmargin=3.8em,
-  		labelwidth=2.6em,
-  		labelsep=0.5em,
-  		align=left,
-  		itemsep=0.5em,
-  		topsep=0.3em
-		]
+      \begin{description}[
+        leftmargin=2.2em,
+        labelwidth=1.2em,
+        labelsep=0.6em,
+        itemsep=0.5em,
+        align=left
+      ]
 
-        \item[\AIaidcheckbox{brainstorming}\ (a)]
+        \item[\AIaidcheckbox{brainstorming}]
         support the generation of ideas, the definition of objectives or the organization of the dissertation;
 
-        \item[\AIaidcheckbox{literature-search}\ (b)]
+        \item[\AIaidcheckbox{literature-search}]
         suggest bibliographic references or locate and organize scientific literature;
 
-        \item[\AIaidcheckbox{translation}\ (c)]
+        \item[\AIaidcheckbox{translation}]
         translate text between languages;
 
-        \item[\AIaidcheckbox{summarization}\ (d)]
+        \item[\AIaidcheckbox{summarization}]
         summarize, synthesize or compare texts from bibliographic sources;
 
-        \item[\AIaidcheckbox{text-generation}\ (e)]
+        \item[\AIaidcheckbox{text-generation}]
         suggest or generate text for parts of the dissertation;
 
-        \item[\AIaidcheckbox{text-review}\ (f)]
+        \item[\AIaidcheckbox{text-review}]
         perform language revision or spelling correction on parts of the dissertation;
 
-        \item[\AIaidcheckbox{code-generation}\ (g)]
+        \item[\AIaidcheckbox{code-generation}]
         generate or complete code, for example, in MATLAB, Python or other programming languages;
 
-        \item[\AIaidcheckbox{visualization}\ (h)]
+        \item[\AIaidcheckbox{visualization}]
         support data visualization or generate figures, diagrams or images;
 
-        \item[\AIaidcheckbox{data-analysis}\ (i)]
+        \item[\AIaidcheckbox{data-analysis}]
         perform automated data analysis or interpretation, for example, classification, clustering or other methods;
 
-        \item[\AIaidcheckbox{other}\ (j)]
+        \item[\AIaidcheckbox{other}]
         serve other purposes not covered by the preceding categories.
 
-      \end{enumerate}
+      \end{description}
 
       \subsection*{Description of use:}
 
-      \begin{enumerate}[leftmargin=2.8em,itemsep=0.5em,topsep=0.4em]
-        \AItoolsdescriptioncontent
-      \end{enumerate}
+      \AItoolsdescriptioncontent
 
     }%
 
