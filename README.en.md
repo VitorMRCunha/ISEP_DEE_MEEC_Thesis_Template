@@ -7,7 +7,7 @@ A maintained LaTeX dissertation template for the Master's Programme in Electrica
 > **Current release: v2.0 [Releases do GitHub](https://github.com/VitorMRCunha/ISEP_DEE_MEEC_Thesis_Template/releases)**
 > 
 [![License: LPPL 1.3c](https://img.shields.io/badge/License-LPPL%201.3c-blue.svg)](LICENSE)
-[![Release](https://img.shields.io/badge/release-v2.0--dev-orange.svg)](https://github.com/VitorMRCunha/ISEP_DEE_MEEC_Thesis_Template/releases)
+[![Release](https://img.shields.io/badge/release-v2.0-orange.svg)](https://github.com/VitorMRCunha/ISEP_DEE_MEEC_Thesis_Template/releases)
 
 ## Overview
 
