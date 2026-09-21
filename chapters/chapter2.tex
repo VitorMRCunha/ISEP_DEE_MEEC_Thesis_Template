@@ -145,22 +145,27 @@ As ferramentas são indicadas através do comando \verb|\AItools| na forma de li
 \AItools{OpenAI ChatGPT, Microsoft Copilot}
 \end{verbatim}
 
-As formas de apoio são selecionadas através do comando \verb|\AIaids|. Os
-identificadores disponíveis são:
+As formas de apoio são selecionadas através do comando \verb|\AIaids|. Os identificadores disponíveis são:
 
-\begin{tabularx}{\textwidth}{@{}l l X@{}}
-(a) & \code{brainstorming}      & geração e exploração inicial de ideias; \\
-(b) & \code{literature-search}  & apoio à pesquisa bibliográfica; \\
-(c) & \code{translation}        & tradução de texto; \\
-(d) & \code{summarization}      & resumo ou síntese de conteúdos; \\
-(e) & \code{text-generation}    & geração de texto; \\
-(f) & \code{text-review}        & revisão linguística ou estilística; \\
-(g) & \code{code-generation}    & geração ou apoio à programação; \\
-(h) & \code{visualization}      & produção ou apoio à criação de elementos visuais; \\
-(i) & \code{data-analysis}      & apoio à análise de dados; \\
-(j) & \code{other}              & outro tipo de utilização não incluído nas categorias anteriores. \\
-\end{tabularx}
-\newpage
+\begin{description}[
+  leftmargin=4.2cm,
+  labelwidth=3.8cm,
+  labelsep=0.4cm,
+  style=multiline
+]
+    \item[\code{brainstorming}] geração e exploração inicial de ideias;
+    \item[\code{literature-search}] apoio à pesquisa bibliográfica;
+    \item[\code{translation}] tradução de texto;
+    \item[\code{summarization}] resumo ou síntese de conteúdos;
+    \item[\code{text-generation}] geração de texto;
+    \item[\code{text-review}] revisão linguística ou estilística;
+    \item[\code{code-generation}] geração ou apoio à programação;
+    \item[\code{visualization}] produção ou apoio à criação de elementos visuais;
+    \item[\code{data-analysis}] apoio à análise de dados;
+    \item[\code{other}] outro tipo de utilização não incluído nas categorias
+    anteriores.
+\end{description}
+
 Considere o seguinte exemplo de uso do comando \verb|\AIaids|:
 \begin{verbatim}
 \AIaids{
@@ -171,35 +176,25 @@ Considere o seguinte exemplo de uso do comando \verb|\AIaids|:
 }
 \end{verbatim}
 
-A descrição da utilização é escrita no ambiente \code{AItoolsdescription}. Cada utilização distinta deve ser introduzida com \verb|\item|. Para tornar a declaração concisa e factual, deve identificar a(s) ferramenta(s) através do número atribuído na lista de ferramentas, a(s) categoria(s) através da respetiva letra, o local da dissertação onde ocorreu a utilização e a finalidade concreta do apoio prestado. Quando aplicável, deverá também indicar de que forma o resultado produzido foi revisto, testado ou validado pelo autor. Considere os seguintes exemplos:
+A descrição da utilização é escrita no ambiente \code{AItoolsdescription}. Esta deve ser objetiva, específica e suficientemente clara para permitir identificar a ferramenta, onde esta foi utilizada (por exemplo, capítulo, secção, figura ou em toda a dissertação), a finalidade da utilização e, quando aplicável, a forma como o resultado produzido foi revisto ou validado. Considere os seguintes exemplos:
 
 \begin{verbatim}
 \begin{AItoolsdescription}
-% One tool, one assistance category, at a specific location
-\item Na Secção 2.3 foi utilizada a ferramenta (1) na categoria (b),
-para sugerir palavras-chave e expressões de pesquisa relacionadas com
-os temas abordados na revisão da literatura. As referências foram
-posteriormente verificadas pelo autor nas fontes originais.
+Em toda a dissertação foram utilizadas as ferramentas ChatGPT e
+Copilot para apoio à revisão linguística e melhoria da clareza
+do texto.
 
-% One tool used for several assistance categories
-\item No desenvolvimento do código MATLAB descrito no Capítulo 4 foi
-utilizada a ferramenta (2) nas categorias (g) e (h), para gerar
-funções auxiliares e apoiar a visualização gráfica dos resultados. 
+No desenvolvimento do código MATLAB descrito no Capítulo 4 foi
+usado o ChatGPT para gerar funções auxiliares e apoiar a
+visualização gráfica dos resultados, sendo o resultado as
+Figuras 3.3 e 3.7.
 
-% Several tools used for the same assistance category
-\item Em toda a dissertação foram utilizadas as ferramentas (1) e (2
-na categoria (e), para apoio à revisão linguística e melhoria da
-clareza do texto. Todas as sugestões foram revistas pelo autor.
-
-% One tool and category applied to several specific outputs/locations
-\item A ferramenta (1) foi utilizada na categoria (d) nas Secções 3.2
-e 3.4 e na discussão dos resultados da Secção 5.2, para resumir e
-comparar informação proveniente das fontes bibliográficas previamente
-selecionadas pelo autor.
+A ferramenta Copilot foi utilizada nas Secções 2.2 e 2.3
+e na discussão dos resultados da Secção 5.2, para resumir e
+comparar informação proveniente das fontes bibliográficas
+previamente selecionadas pelo autor.
 \end{AItoolsdescription}
 \end{verbatim}
-
-Deste modo, a declaração estabelece uma correspondência direta entre a ferramenta utilizada, a categoria de utilização e a parte concreta da dissertação em que ocorreu essa utilização.
 
 Quando a utilização de inteligência artificial é declarada, a classe gera automaticamente o anexo intitulado ``Declaração de Uso de Inteligência Artificial Generativa''. Este anexo inclui a informação declarada através dos comandos \verb|\AItools|, \verb|\AIaids| e ambiente \code{AItoolsdescription}.
 
@@ -369,16 +364,7 @@ Considere o seguinte código usado para criar a Tabela~\ref{tab:basictable}:
 \end{table}
 \end{verbatim}
 }
-%%%
-\begin{landscape}
-	\begin{figure}[htbp]
-		\centering
-		\includegraphics[scale=1.8]{cap2_fig1.eps}
-		\caption{Uma figura em \textit{landscape}.}
-		\label{fig:exemplo3}
-	\end{figure}
-\end{landscape}
-%%%
+
 \begin{table}[htb]
 	\caption{Exemplo de uma tabela simples em \LaTeX{}.}
 	\label{tab:basictable}
@@ -394,6 +380,17 @@ Considere o seguinte código usado para criar a Tabela~\ref{tab:basictable}:
 	\bottomrule
 	\end{tabular}
 \end{table}
+
+%%%
+\begin{landscape}
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[scale=1.8]{cap2_fig1.eps}
+		\caption{Uma figura em \textit{landscape}.}
+		\label{fig:exemplo3}
+	\end{figure}
+\end{landscape}
+%%%
 
 Para tabelas com uma estrutura mais complexa podem ser utilizados os comandos \verb|\multirow| e \verb|\multicolumn|. O primeiro permite que uma célula ocupe várias linhas, enquanto o segundo permite agrupar várias colunas sob uma única célula. A Tabela~\ref{tab:multitable} apresenta um exemplo da utilização combinada destes dois comandos.
 
@@ -455,7 +452,7 @@ Para fazer referência a tabelas use o comando \verb|\ref{<label>}|, onde \verb|
 
 \subsection{Algoritmos e excertos de código}
 
-A apresentação de algoritmos na forma de pseudo-código é útil para apresentar uma dada lógica independentemente da linguagem em que esta irá ser implementada. O Algoritmo~\ref{alg:exemplo} é um exemplo criado com os comandos do \textit{package} \verb|algorithmicx|. 
+A apresentação de algoritmos na forma de pseudo-código é útil para apresentar uma lógica independente da linguagem em que esta irá ser implementada. Considere o exemplo (Algoritmo~\ref{alg:exemplo}) criado com o \textit{package} \verb|algorithmicx|. 
 
 \begin{algorithm}[hbt!]
 \caption{Exemplo de um algoritmo}
@@ -474,9 +471,9 @@ A apresentação de algoritmos na forma de pseudo-código é útil para apresent
 \hrulefill
 \end{algorithm}
 
-Irá encontrar na documentação (\url{https://ctan.org/pkg/algorithmicx}) deste \textit{package} a lista completa de comandos disponíveis para criar os mais comuns ciclos e estruturas de controlo de fluxo lógico. É também possível fazer referência a linhas específicas do algoritmo, e.g., ver código da linha~\ref{alg:line:l3}.
+Consulte a documentação (\url{https://ctan.org/pkg/algorithmicx}) para a lista completa de comandos disponíveis. É também possível fazer referência a linhas específicas do algoritmo, e.g., ver código da linha~\ref{alg:line:l3}.
 
-Para apresentar excertos de código-fonte na sua dissertação este \textit{template} usa o \gls{pack} \verb|listings|. Tenha em consideração que por omissão as listagens estão definidas como flutuantes para que o \LaTeX{} as possa posicionar da melhor forma. Esta definição implica também que uma listagem não será dividida por uma nova página, pelo que é recomendado que utilize excertos que não excedam uma página. Existem muitas opções que podem ser especificadas neste ambiente, para mais informações consultar \url{https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings}.
+Para apresentar excertos de código-fonte na sua dissertação este \textit{template} usa o \gls{pack} \verb|listings|. Tenha em consideração que por omissão as listagens estão definidas como flutuantes. Esta definição implica também que uma listagem não será dividida por ocorrência de uma nova página, pelo que é recomendado que utilize excertos que não excedam uma página. Para mais informações consultar \url{https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings}.
 
 O comando \verb|\printlistoflistings|, invocado no ficheiro \path{4_frontmatterlists.tex}, cria a secção ``Listagens'' na sua dissertação. Assim, se não usar listagens na sua dissertação deverá comentar este comando. A Listagem~\ref{lst:examplo1} e a Listagem~\ref{lst:examplo2} são dois exemplos de listagens de código. Analise o conteúdo deste ficheiro para mais detalhes.
 
@@ -484,8 +481,7 @@ O comando \verb|\printlistoflistings|, invocado no ficheiro \path{4_frontmatterl
 \begin{minipage}{0.7\linewidth}
 \begin{lstlisting}[language=C, caption=Exemplo simples de C., label=lst:examplo1]
 #include<stdio.h>
-main()
-{
+main(){
 	printf("Hello World");
 }
 \end{lstlisting}
@@ -527,7 +523,6 @@ def incmatrix(genl1,genl2):
 \end{minipage}
 
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Equações}
@@ -535,7 +530,7 @@ def incmatrix(genl1,genl2):
 Se a sua tese fizer uso de conteúdo matemático, então a opção de usar o \LaTeX{} foi a mais acertada. O livro ``Uma não tão pequena introdução ao \LaTeX{}'' tem informação suficiente para a maioria dos casos de composição matemática, mas para conteúdos mais completos recomenda-se o guia \url{tug.ctan.org/info/short-math-guide/short-math-guide.pdf}. Adicionalmente, uma extensa lista de símbolos pode ser consultada em \url{tug.ctan.org/info/symbols/comprehensive/symbols-a4.pdf}.
 
 O \LaTeX{} permite a escrita de equações \textit{inline} como $E = mc^{2}$ ou em modo \textit{display}, sendo neste caso automaticamente numeradas. Deverá usar o comando \verb|\label{<label>}| para fazer referência a uma equação~(\ref{eqn:einstein}). O código:
-
+\newpage
 \begin{verbatim}
 \begin{equation}
 	E = mc^{2} .
