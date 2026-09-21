@@ -7,7 +7,7 @@ Este repositório é a fonte oficial do *template* LaTeX para dissertações do 
 > **Versão atual: v2.0 [Releases do GitHub](https://github.com/VitorMRCunha/ISEP_DEE_MEEC_Thesis_Template/releases)**
 
 [![Licença: LPPL 1.3c](https://img.shields.io/badge/Licen%C3%A7a-LPPL%201.3c-blue.svg)](LICENSE)
-[![Versão](https://img.shields.io/badge/vers%C3%A3o-v2.0--dev-orange.svg)](https://github.com/VitorMRCunha/ISEP_DEE_MEEC_Thesis_Template/releases)
+[![Versão](https://img.shields.io/badge/vers%C3%A3o-v2.0-orange.svg)](https://github.com/VitorMRCunha/ISEP_DEE_MEEC_Thesis_Template/releases)
 
 ## Visão geral
 
