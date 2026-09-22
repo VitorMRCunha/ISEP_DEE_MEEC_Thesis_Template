@@ -11,7 +11,7 @@ A maintained LaTeX dissertation template for the Master's Programme in Electrica
 
 ## Overview
 
-The MEEC Thesis Template provides a ready-to-use LaTeX structure for MEEC dissertations, including institutional formatting, automated title/front matter, dissertation metadata, bibliography management, glossaries, acronym and symbol lists, and academic-integrity declarations.
+The MEEC Thesis Template provides a ready-to-use LaTeX structure for MEEC dissertations, including institutional formatting, automated title/front matter, dissertation metadata, bibliography management, glossaries, acronym and symbol lists and academic-integrity declarations.
 
 The project originated in 2021 as an adaptation of the LaTeXTemplates *Masters/Doctoral Thesis* template available at that time. Since then, the template has undergone extensive independent development, redesign, institutional adaptation and maintenance by Vítor M. R. Cunha.
 
