@@ -1,0 +1,92 @@
+name: Update reference PDFs
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-reference-pdfs
+  cancel-in-progress: false
+
+jobs:
+  update-examples:
+    name: Compile and update reference PDFs
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out main
+        uses: actions/checkout@v7
+        with:
+          ref: main
+
+      - name: Create Portuguese and English build sources
+        shell: python
+        run: |
+          from pathlib import Path
+          import re
+
+          source = Path("main.tex").read_text(encoding="utf-8")
+          pattern = re.compile(
+              r"(?m)^(?P<indent>\s*)(?:portuguese|english),"
+              r"(?P<rest>\s*%.*Select document language.*)$"
+          )
+
+          def write_variant(language_option, filename):
+              modified, count = pattern.subn(
+                  lambda m: f"{m.group('indent')}{language_option},{m.group('rest')}",
+                  source,
+                  count=1,
+              )
+              if count != 1:
+                  raise SystemExit("Could not locate the language option in main.tex.")
+              Path(filename).write_text(modified, encoding="utf-8")
+
+          write_variant("portuguese", "examples-main-pt.tex")
+          write_variant("english", "examples-main-en.tex")
+
+      - name: Compile Portuguese reference PDF
+        uses: xu-cheng/latex-action@v4
+        with:
+          root_file: examples-main-pt.tex
+          texlive_version: 2026
+          os: debian
+
+      - name: Compile English reference PDF
+        uses: xu-cheng/latex-action@v4
+        with:
+          root_file: examples-main-en.tex
+          texlive_version: 2026
+          os: debian
+
+      - name: Verify generated PDFs
+        shell: bash
+        run: |
+          test -s examples-main-pt.pdf
+          test -s examples-main-en.pdf
+
+      - name: Install PDFs in examples directory
+        shell: bash
+        run: |
+          mkdir -p examples
+          cp examples-main-pt.pdf examples/ISEP_DEE_MEEC_Thesis_Template_PT.pdf
+          cp examples-main-en.pdf examples/ISEP_DEE_MEEC_Thesis_Template_EN.pdf
+
+      - name: Commit updated reference PDFs
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add \
+            examples/ISEP_DEE_MEEC_Thesis_Template_PT.pdf \
+            examples/ISEP_DEE_MEEC_Thesis_Template_EN.pdf
+
+          if git diff --cached --quiet; then
+            echo "Reference PDFs are already up to date."
+            exit 0
+          fi
+
+          git commit -m "docs: update reference PDFs"
+          git push origin HEAD:main
